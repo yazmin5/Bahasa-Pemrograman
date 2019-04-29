@@ -1,0 +1,17 @@
+package com.company.yaz;
+import java.io.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        BufferedReader dataIn = new
+                BufferedReader(new InputStreamReader(System.in));
+        try { //deteksi error
+            String temp = dataIn.readLine();
+            System.out.println(temp);
+            System.out.println(); //ctrl+p di tengah parameter keluar seusatu
+        } catch(IOException e){
+            System.out.println("Error input");
+        } 
+    }
+}
